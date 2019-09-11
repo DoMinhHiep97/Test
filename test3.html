@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="yearOfBirth" type="number" placeholder="Your Birthyear">
+<input id="currentYear" type="number" placeholder="Current Year">
+<button type="button" onclick="show()">Show Year Old of you!</button>
+<script>
+    function show() {
+        let yearOfBirth=document.getElementById("yearOfBirth").value;
+        let currentYear=document.getElementById("currentYear").value;
+        let yearOld=currentYear-yearOfBirth;
+        if(yearOfBirth>currentYear){
+            alert("Không hợp lệ!");
+        }else {
+            alert("Your Year Old Is: " + yearOld);
+        }
+    }
+</script>
+</body>
+</html>
